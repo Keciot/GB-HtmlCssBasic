@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script src="fotorama-4.6.4/jquery-3.5.0.min.js"></script>
+
+    <title>Contacts</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="productsHeader">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <ul class="menu clearFix">
+                    <li class="menu-list"><a href="index.html" class="menu-link">HOME</a></li>
+                    <li class="menu-list"><a href="products-list.html" class="menu-link">PRODUCTS</a></li>
+                    <li class="menu-list"><a href="#" class="menu-link">HISTORY</a></li>
+                    <li class="menu-list"><a href="Product-detales.html" class="menu-link">SHOWROOM</a></li>
+                    <li class="menu-list"><a href="#" class="menu-link  menu-link-active">CONTACT</a></li>
+                    <!--ниже будет jq, чтобы по кнопке с лупой открывалось поле для ввода и поиска. Инпут работает, но никакого функционала для самого поиска пока не вставляла - не умею еще.  -->
+                    <li class="menu-list" id="searchField">
+                        <input type="text" placeholder="Search...">
+                        <span onclick="$('#searchField, .menu-list').fadeToggle(); return false;">&times;</span>
+                    </li>
+                    <li class="menu-list search"><a href="#" class="menu-link" onclick="$( '#searchField, .menu-list' ).fadeToggle(); return false;"><img src="img/search_224.svg" alt="search"></a></li>
+                </ul>
+            </div>
+            <h1 class="prodH1">Contact Us</h1>
+        </section>
+
+        <section class="contactsCont">
+            <div class="contactBox">
+                <img src="img/pin.svg" alt="map pin" style="height: 57px; width: 50px;">
+                <h2 class="contH2">California</h2>
+                <h3 class="contH3">Phone:</h3>
+                <p class="contText1"> 1900 - 1234 -5678 </p>
+                <h3 class="contH3"> Email: </h3>
+                <p class="contText1"> info@interior.com </p>
+                <h3 class="contH3"> Address: </h3>
+                <p class="contText2"> 12 W 1st St, 90001 Los Angeles, California </p>
+            </div>
+            <div class="contactBox">
+                <img src="img/pin.svg" alt="map pin" style="height: 57px; width: 50px;">
+                <h2 class="contH2">California</h2>
+                <h3 class="contH3">Phone:</h3>
+                <p class="contText1"> 1900 - 1234 -5678 </p>
+                <h3 class="contH3"> Email: </h3>
+                <p class="contText1"> info@interior.com </p>
+                <h3 class="contH3"> Address: </h3>
+                <p class="contText2"> 12 W 1st St, 90001 Los Angeles, California </p>
+            </div>
+            <div class="contactBox">
+                <img src="img/pin.svg" alt="map pin" style="height: 57px; width: 50px;">
+                <h2 class="contH2">California</h2>
+                <h3 class="contH3">Phone:</h3>
+                <p class="contText1"> 1900 - 1234 -5678 </p>
+                <h3 class="contH3"> Email: </h3>
+                <p class="contText1"> info@interior.com </p>
+                <h3 class="contH3"> Address: </h3>
+                <p class="contText2"> 12 W 1st St, 90001 Los Angeles, California </p>
+            </div>
+
+
+        </section>
+    </div>
+    
+    <footer>
+        <div class="contacts">
+            <p class="footerHeader">Contact Us</p>
+            <p class="footerText">
+                132A Bridge Road Richmond VIC <br>Australia <br><br> Talk to us on 1300 132 <br>info@interior.com
+            </p>
+        </div>
+        <div class="usefulLinks">
+            <p class="footerHeader">Useful Information</p>
+            <div class="linksColomns">
+                <a href="#">Sales terms</a>
+                <a href="#">Customer care</a>
+                <a href="#">Delivery</a>
+                <a href="#">Architect accounts</a>
+                <a href="#">Careers</a>
+                <a href="#">Exchanges & returns</a>
+            </div>
+        </div>
+        <div class="touch">
+            <p class="footerHeader">Let’s Stay in Touch!</p>
+            <p class="footerText">Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+            <form>
+                <input type="email" placeholder="your email address">
+                <input class="paperPlane" type="submit" value=""></form>
+        </div>
+
+        <div class="lastRow">
+            <div class="copy">&copy;&nbsp;Copyright - INTERIOR 2016. All Rights Reserved.</div>
+            <div class="socialLinks">
+                <a href="#"><img src="img/facebook-with-circle.svg" alt="facebook"></a>
+                <a href="#"><img src="img/twitter-with-circle.svg" alt="twitter"></a>
+                <a href="#"><img src="img/google+-with-circle.svg" alt="google"></a>
+                <a href="#"><img src="img/pinterest-with-circle.svg" alt="pinterest"></a>
+            </div>
+            <div class="copy">
+                <a href="#">Terms & Conditions / Privacy policy & Cookies</a>
+            </div>
+        </div>
+    </footer> 
+
+</body>
+
+</html>

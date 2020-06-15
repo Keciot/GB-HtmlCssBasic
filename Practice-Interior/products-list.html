@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script src="fotorama-4.6.4/jquery-3.5.0.min.js"></script>
+
+    <title>Products Range</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="productsHeader">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <ul class="menu clearFix">
+                    <li class="menu-list"><a href="index.html" class="menu-link">HOME</a></li>
+                    <li class="menu-list"><a href="products-list.html" class="menu-link menu-link-active">PRODUCTS</a></li>
+                    <li class="menu-list"><a href="#" class="menu-link">HISTORY</a></li>
+                    <li class="menu-list"><a href="Product-detales.html" class="menu-link">SHOWROOM</a></li>
+                    <li class="menu-list"><a href="Contacts.html" class="menu-link">CONTACT</a></li>
+                    <!--ниже будет jq, чтобы по кнопке с лупой открывалось поле для ввода и поиска. Инпут работает, но никакого функционала для самого поиска пока не вставляла - не умею еще.  -->
+                    <li class="menu-list" id="searchField">
+                        <input type="text" placeholder="Search...">
+                        <span onclick="$('#searchField, .menu-list').fadeToggle(); return false;">&times;</span>
+                    </li>
+                    <li class="menu-list search"><a href="#" class="menu-link" onclick="$( '#searchField, .menu-list' ).fadeToggle(); return false;"><img src="img/search_224.svg" alt="search"></a></li>
+                </ul>
+            </div>
+            <h1 class="prodH1">Our Products Range</h1>
+        </section>
+
+        <section class="prodMain">
+            <div class="miniProdNav">
+                <a class="miniNavActive" href="#">all</a>
+                <a href="#">home</a>
+                <a href="#">office</a>
+                <a href="#">furniture</a>
+                <a href="#">modern</a>
+                <a href="#">classic</a>
+            </div>
+            <div class="prodGallery">
+                <div class="trendContent">
+                    <a class="trendItem" href="#" style="background-image: url(img/product-11.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-21.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-31.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-41.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-5.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-6.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-11.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-21.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-31.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-41.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-5.jpg);"></a>
+                    <a class="trendItem" href="#" style="background-image: url(img/product-6.jpg);"></a>
+                </div>
+            </div>
+            <div class="refreshBut">
+                <a href="#" class="refreshButton"><img src="img/refresh.svg" alt="" style=" height: 29px; width: 42px;"></a>
+            </div>
+        </section>
+
+        <section class="exclusive">
+            <div class="exclBlock" style="background-image: url(img/promo-img-1.jpg); background-position: right;">
+                <p class="exclH2">exclusive</p>
+                <p class="exclH1">Fishnet Chair</p>
+                <p class="unitHoverDesc">Seat and back with upholstery made of cold cure <br>foam.  Steel frame, available in matt</p>
+                <a href="#" class="button">Order Us &rsaquo;</a>
+            </div>
+            <div class="exclBlock" style="background-image: url(img/promo-img.jpg); background-position: right;">
+                <p class="exclH2">exclusive</p>
+                <p class="exclH1">Fishnet Chair</p>
+                <p class="unitHoverDesc">Seat and back with upholstery made of cold cure <br> foam.  Steel frame, available in matt</p>
+                <a href="#" class="button">Order Us &rsaquo;</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contacts">
+                <p class="footerHeader">Contact Us</p>
+                <p class="footerText">
+                    132A Bridge Road Richmond VIC <br>Australia <br><br> Talk to us on 1300 132 <br>info@interior.com
+                </p>
+            </div>
+            <div class="usefulLinks">
+                <p class="footerHeader">Useful Information</p>
+                <div class="linksColomns">
+                    <a href="#">Sales terms</a>
+                    <a href="#">Customer care</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Architect accounts</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Exchanges & returns</a>
+                </div>
+            </div>
+            <div class="touch">
+                <p class="footerHeader">Let’s Stay in Touch!</p>
+                <p class="footerText">Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+                <form>
+                    <input type="email" placeholder="your email address">
+                    <input class="paperPlane" type="submit" value=""></form>
+            </div>
+
+            <div class="lastRow">
+                <div class="copy">&copy;&nbsp;Copyright - INTERIOR 2016. All Rights Reserved.</div>
+                <div class="socialLinks">
+                    <a href="#"><img src="img/facebook-with-circle.svg" alt="facebook"></a>
+                    <a href="#"><img src="img/twitter-with-circle.svg" alt="twitter"></a>
+                    <a href="#"><img src="img/google+-with-circle.svg" alt="google"></a>
+                    <a href="#"><img src="img/pinterest-with-circle.svg" alt="pinterest"></a>
+                </div>
+                <div class="copy">
+                    <a href="#">Terms & Conditions / Privacy policy & Cookies</a>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+
+    </div>
+</body>
+
+</html>
